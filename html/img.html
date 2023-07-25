@@ -1,0 +1,205 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image</title>
+</head>
+<body>
+     <img src="images/hh.jpeg" height="300" width="500px" alt="banner">
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Select Button</title>
+    <script>
+        function validateForm() {
+            var selectValue = document.getElementById("selectButton").value;
+            
+            if (selectValue === "default") {
+                alert("Please select an option from the dropdown!");
+                return false;
+            }
+            // Add more validation logic here if needed
+            
+            return true; // Form submission allowed
+        }
+    </script>
+</head>
+<body>
+    <h2>Form with Select Button and JavaScript Validation</h2>
+    <form onsubmit="return validateForm()">
+        <label for="selectButton">Select an option:</label>
+        <select id="selectButton">
+            <option value="default">Select an option...</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+ -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Checkbox and JavaScript Validation</title>
+    <script>
+        function validateForm() {
+            var checkboxChecked = document.getElementById("myCheckbox").checked;
+            
+            if (!checkboxChecked) {
+                alert("Please check the checkbox to proceed!");
+                return false;
+            }
+            // Add more validation logic here if needed
+            
+            return true; // Form submission allowed
+        }
+    </script>
+</head>
+<body>
+    <h2>Form with Checkbox and JavaScript Validation</h2>
+    <form onsubmit="return validateForm()">
+        <label>
+            <input type="checkbox" id="myCheckbox">
+            I agree to the terms and conditions.
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Radio Buttons and JavaScript Validation</title>
+    <script>
+        function validateForm() {
+            var radioButtons = document.getElementsByName("gender");
+            var isChecked = false;
+            
+            for (var i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                    isChecked = true;
+                    break;
+                }
+            }
+            
+            if (!isChecked) {
+                alert("Please select a gender!");
+                return false;
+            }
+            // Add more validation logic here if needed
+            
+            return true; // Form submission allowed
+        }
+    </script>
+</head>
+<body>
+    <h2>Form with Radio Buttons and JavaScript Validation</h2>
+    <form onsubmit="return validateForm()">
+        <label>
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="gender" value="other"> Other
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form with JavaScript Validation</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+<form id="registrationForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" >
+
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" >
+
+
+
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" >
+
+    <br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+
+    <br>
+    <label for="selectButton">Select an option:</label>
+    <select id="selectButton">
+        <option  value="default">--select--</option>
+        <option  value="default">2021</option>
+         <option  value="default">2022</option>
+          <option  value="default">2023</option>
+           <option  value="default">2024</option>
+    </select><br>
+    <br>
+    <input type="submit" value="Register">
+</form>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        var selectValue = document.getElementById("selectButton").value;
+        // Simple name validation: should not be empty and at least 3 characters long
+        if (name.length < 3) {
+            alert("Name must be at least 3 characters long.");
+            return false;
+        }
+
+        // Simple email validation: should not be empty and should have a valid email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+        // Password validation: should not be empty and must match the confirm password field
+        if (password.length === 0) {
+            alert("Password cannot be empty.");
+            return false;
+        }
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        if (selectValue === "default") {
+                alert("Please select an option from the dropdown!");
+                return false;
+            }
+        // If all validations pass, the form will be submitted
+           return true;
+
+    }
+</script>
+
+</body>
+</html> -->

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Body Color Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #colorInput {
+            margin-top: 20px;
+        }
+
+        #colorOutput {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter a Color Code or Name</h1>
+    <form id="colorForm">
+        <input type="text" id="colorInput" placeholder="Enter a color code or name">
+        <input type="submit" value="Change Color">
+    </form>
+    <div id="colorOutput"></div>
+
+    <script>
+        document.getElementById("colorForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const color = document.getElementById("colorInput").value;
+            document.body.style.backgroundColor = color;
+            document.getElementById("colorOutput").textContent = "Selected Color: " + color;
+        });
+    </script>
+</body>
+</html>
+

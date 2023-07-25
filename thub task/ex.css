@@ -1,0 +1,41 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-container {
+        position: fixed; /* This keeps the menu fixed on the screen */
+        top: 0;
+        right: 0;
+        background-color: #f1f1f1; /* Change this to your preferred background color */
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow for a nice effect */
+    }
+
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex; /* This ensures the menu items are displayed horizontally */
+    }
+
+    .menu li {
+        margin-right: 15px; /* Adjust this value to create spacing between menu items */
+    }
+
+    .menu li:last-child {
+        margin-right: 0; /* Remove margin from the last menu item */
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #333; /* Change this to your preferred text color */
+        font-size: 16px; /* Change this to your preferred font size */
+        padding: 5px 10px; /* Adjust padding as needed to make the menu items look good */
+    }
+
+    .menu li a:hover {
+        /* Add any hover styles here */
+    }
+</style>
