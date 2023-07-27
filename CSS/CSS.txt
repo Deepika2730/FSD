@@ -1,5 +1,12 @@
 CASCADIND STYLE SHEET
 --------------------
-1.IN-LINE
-2.INTERNAL
-3.EXTERNAL
+1.IN-LINE(1st priority)
+2.INTERNAL(2nd priority)
+3.EXTERNAL(3rd priority)
+
+SELECTORS:
+---------
+1.Class Selector (.)
+2.Id Selector(#)
+3.universal(*)
+4.
