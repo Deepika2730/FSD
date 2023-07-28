@@ -8,5 +8,6 @@ SELECTORS:
 ---------
 1.Class Selector (.)
 2.Id Selector(#)
-3.universal(*)
-4.
+3.Universal Selector(*)
+4.by using ELEMENT name
+5.
