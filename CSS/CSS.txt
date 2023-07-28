@@ -10,4 +10,13 @@ SELECTORS:
 2.Id Selector(#)
 3.Universal Selector(*)
 4.by using ELEMENT name
-5.
+5.by using attribute
+6.Pseudo Selector
+
+
+Pseudo Classes:
+---------------
+1.hover class
+2.link
+3.visited
+4.Active
