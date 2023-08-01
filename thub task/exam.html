@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Cards Example</title>
+  <style type="text/css">
+    /* styles.css */
+
+.card {
+  width: 300px; /* Set the width of the card */
+  border: 1px solid #ccc; /* Add a border for the card */
+  border-radius: 5px; /* Round the corners of the card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin: 10px; /* Add some space between cards */
+}
+
+.card img {
+  width: 100%; /* Make the image fill the card's width */
+  border-radius: 5px 5px 0 0; /* Round only the top corners of the image */
+}
+
+.card-content {
+  padding: 10px; /* Add some padding inside the card */
+}
+
+.card h2 {
+  margin-top: 0; /* Remove the default margin for the heading */
+}
+
+.card p {
+  margin: 0; /* Remove default margin for paragraphs */
+}
+
+  </style>
+</head>
+<body>
+  <div class="card-container"> <!-- Create a div to contain the cards -->
+    <div class="card">
+      <img src="images/t1.jpg" alt="Card Image 1">
+      <div class="card-content">
+        <h2>Card 1</h2>
+        <p>Card 1 description goes here.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/t2.jpg" alt="Card Image 2">
+      <div class="card-content">
+        <h2>Card 2</h2>
+        <p>Card 2 description goes here.</p>
+      </div>
+    </div>
+
+    <!-- Add more card elements here if needed -->
+
+  </div>
+</body>
+</html>

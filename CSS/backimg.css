@@ -1,0 +1,13 @@
+/*body{
+	background-image: url('images/t15.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+div{
+	background-image: url('images/t15.jpg');
+	background-size: cover;
+}
+#header{
+	background-image: url('images/t15.jpg');
+	background-size: cover;
+}

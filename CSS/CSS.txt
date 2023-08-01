@@ -17,6 +17,26 @@ SELECTORS:
 Pseudo Classes:
 ---------------
 1.hover class
-2.link
+2.link 
 3.visited
 4.Active
+
+
+BACKGROUND-IMAGES:
+-----------------
+background-image:url('image.path')
+background-repeat:no-repeat
+background-size:cover
+
+BORDER-STYLE:
+------------
+1.dashed
+2.groove
+3.dotted
+4.solid
+
+
+for createing alternative colors in dashed div:
+----------------------------------------------
+Box-Shadow: horizantal vertical blurr border color
+outline: size style color
