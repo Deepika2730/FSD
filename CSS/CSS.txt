@@ -40,3 +40,21 @@ for createing alternative colors in dashed div:
 ----------------------------------------------
 Box-Shadow: horizantal vertical blurr border color
 outline: size style color
+
+MARGIN:
+-------
+* It is used to create a space outside the html elements..
+
+PADDING:
+-------
+
+
+
+
+
+
+
+
+
+
+
