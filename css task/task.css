@@ -1,0 +1,56 @@
+.a{
+          height: 220px;
+          width: 200px;
+          border: 2px solid white;
+          background:white;
+          float: left;
+          margin: 30px;
+          border-radius: 15px;
+		}
+		.b{
+          height: 220px;
+          width: 200px;
+          border: 2px solid white;
+          background: white;
+          float: left;
+          margin: 30px;
+          border-radius: 15px;
+		}
+		.c{
+          height: 220px;
+          width: 200px;
+          border: 2px solid white;
+          background:white;
+          float:left;
+          margin: 30px;
+          border-radius: 15px;
+		}
+		.d{
+			height: 300px;
+			width: 800px;
+			border: 2px solid whitesmoke;
+            background-color: whitesmoke;
+		}
+        i{
+            font-size:30px;
+            padding-top:10px;
+            background-color:blue;
+            color: white;
+            width: 40px;
+            height: 40px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            border-color: blue;
+            padding: 5px;
+            font-size: 10px;
+        }
+        hr{
+            border-color:skyblue;
+        }
+        p{
+            font-size:15px;
+            color:grey;
+        }

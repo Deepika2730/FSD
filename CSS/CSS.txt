@@ -45,10 +45,12 @@ MARGIN:
 -------
 * It is used to create a space outside the html elements..
 
-PADDING:
--------
-
-
+POSITION:
+--------
+STATIC: default position of the html tag in the web page
+FIXED:it fixes the position of the html tag on the given values
+relative:it moves from the given position by the given values
+absolute:it moves from the parent tag by the given values
 
 
 
