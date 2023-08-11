@@ -1,0 +1,60 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+.container{
+	border: 2px solid black;
+}
+div{
+	margin: 2px solid white;
+}
+img{
+	height: 100%;
+	width: 50%;
+}
+.p1{
+	color: grey;
+	margin-left:160px;
+	padding-inline-end:100px;
+	margin-top:0%;
+}
+#h4{
+   margin-left:160px;
+}
+#h2{
+	margin-top: 10px;
+	margin-left: 160px;
+	font-weight: bold;
+	font-size:20px;
+}
+#r1{
+	margin-top: 30px;
+}
+button{
+	width: 100%;
+}
+#hr1{
+	width: 100%;
+}
+span{
+	font-size:20px;
+}
+#r3{
+	margin-right: 10px;
+	color: white;
+}
+#r4{
+	color: white;
+	background-color: rgb(30, 48,80,);
+}
+#r5{
+	color: white;
+}
+.pp{
+	text-align: center;
+}
+#pp3{
+	color:blue;
+	margin-left: 10px;
+}

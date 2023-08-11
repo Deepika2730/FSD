@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Tooltip Example</title>
+  <style type="text/css">
+    p{
+      padding-inline: 200px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h2>TOOLTIP</h2>
+    <p>tooltips are small pop-up boxes that appear when a user hovers over an element. They provide additional information or context about the element without requiring the user to navigate to a new page or take any additional actions. Tooltips are a useful way to enhance the user experience by offering brief explanations, labels, or descriptions for elements on a webpage.</p>
+  <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Click me for more info">Hover me</button>
+  </center>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+</body>
+</html>
