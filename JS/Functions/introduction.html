@@ -6,6 +6,64 @@
 	<title>Introduction</title>
 </head>
 <body>
-
+ <script type="text/javascript">
+ 	// normal function with no parameters
+ 	/*function test() {
+ 		// body...
+ 		alert("Testing");
+ 	}
+ 	test();// calling a function
+ 	//function with one parameter
+ 	function a(b)
+ 	{
+ 		document.write(b)
+ 	}
+ 	a('SREENITHA')
+ 	//function with default parameter value
+ 	function a(b='DEEPIKA')
+ 	{
+ 		document.write(b)
+ 	}
+ 	a()*/
+ 	var a = prompt("Scan Your Id:");
+ 	function scan(rn)
+ 	{
+ 		document.write(rn+"<br>");
+ 	}
+ 	scan(a);
+ 	//function with two parameters
+ 	function sum(a,b=30) {
+ 		// body...
+ 		document.write(a+b+"<br>");
+ 	}
+ 	sum(20)
+ 	// using return types
+ 	var x = function (a,b){
+ 		return a*b
+ 	}
+ 	document.write(x(2,5)+"<br>")
+ 	var y = function (k) {
+ 		// body...
+ 		return k*k*k;
+ 	}
+ 	document.write(y(2)+"<br>");
+ 	//es6 arrow function "=>"
+ 	//we dont need to use function keyword
+ 	add =(a,b)=>
+ 	{
+ 		document.write(a+b+"<br>");
+ 	}
+ 	add(20,80);
+ 	// arrow function single arguments
+ 	get = a =>{
+ 		document.write(a+"<br>")
+ 	}
+ 	get('SREENITHA')
+ 	// arroe function with no arguments
+ 	test = _ =>{
+ 		document.write("DEEPIKA")
+ 	}
+ 	test()
+ </script>
 </body>
 </html>
