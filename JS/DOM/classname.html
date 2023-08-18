@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p class="p">PARA1</p>
+<p class="p">PARA2</p>
+<p class="p">PARA3</p>
+<script>
+   let d=document.getElementsByClassName('p');
+   console.log(d);
+   d[0].style.fontSize="100px";
+   d[1].innerText='modified';
+   d[2].setAttribute("style","color:blue;border:3px solid red;background-color:pink");
+</script>
+</body>
+</html>

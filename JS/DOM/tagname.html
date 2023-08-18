@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>DOM methods</h1>
+<h2>The getElementsByTagName() Method</h2>
+<p>This is a p element.</p>
+<p>This is also a p element.</p>
+<h3>Heading</h3>
+<h3>Heading</h3>
+<h3>Heading</h3>
+<script>
+    let d = document.getElementsByTagName("p");
+    d[0].setAttribute("style","color:green;background-color:yellow;font-size:50px;");
+    d[1].setAttribute("style","color:blue;background-color:pink;font-size:50px;");
+    let f = document.getElementsByTagName("h3");
+    for(let i=0;i<f.length;i++)
+    {
+      f[i].innerHTML="deepika";
+      f[i].style.color='red';
+    }
+</script>
+</body>
+</html>
