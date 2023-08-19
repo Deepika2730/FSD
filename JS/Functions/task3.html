@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TASK3</title>
+</head>
+<body>
+    <button onclick="inc()">Inc</button>
+    <button onclick="dec()">Dec</button>
+    <p>OUTPUT</p>
+    <p id="p_id"></p>
+    <script type="text/javascript">
+    	var i = 1;
+    	function inc() {
+    		// body...
+    		if(i<6){
+    			document.getElementById('p_id').innerText = i++;
+    		}
+    	}x
+    	function dec() {
+    		// body...
+    		if(i>0){
+    			document.getElementById('p_id').innerText = i--;
+    		}
+    	}
+    </script>
+</body>
+</html>

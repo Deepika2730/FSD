@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EVENT HANDLER</title>
+</head>
+<body>
+	<!-- inline event handler -->
+    <!-- <button onclick="test()">Click Here</button> -->
+    <button id="b">Click Here</button>
+    <script type="text/javascript">
+    	/*function test() {
+    		// body...
+    		alert("Testing...")
+    		document.body.style.background= 'hotpink'
+    	}*/
+    	// 2nd way
+    	/*let btn = document.getElementById('b');
+    	btn.onclick=function(){
+    		alert("hi")
+    		document.body.style.background='blue';
+    	}*/
+    	//3rd Way
+    	/*let btn = document.getElementById('b');
+    	btn.addEventListener('click',test)
+    	function test(){
+    		alert("SREENITHA");
+    		document.body.style.background='pink';
+    	}*/
+    	//anonymous function
+    	let btn = document.getElementById('b');
+    	btn.addEventListener('click',function (){
+    		alert("SREENITHA");
+    		document.body.style.background='pink';
+    	})
+    </script>
+</body>
+</html>

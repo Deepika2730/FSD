@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TASK3</title>
+</head>
+<body>
+    <button onclick="inc()">Next</button>
+    <button onclick="dec()">Prev</button>
+    <p>OUTPUT</p>
+    <div id="p_id">
+        <img src="images/1.jpg" style="width:200px;height: 200px;">
+    </div>
+    <script type="text/javascript">
+    	var i = 2;
+    	function inc() {
+    		// body...
+    		if(i<6){
+                var res = i++;
+    			document.getElementById('p_id').innerHTML = "<img src ='images/"+res+".jpg' style = 'width:200px;height:200px;' />"
+
+    		}
+    	}x
+    	function dec() {
+    		// body...
+    		if(i>0){
+                var res = i--;
+                if(res!=6){
+    			document.getElementById('p_id').innerHTML = "<img src ='images/"+res+".jpg' style = 'width:200px;height:200px;' />"
+            }
+    		}
+    	}
+    </script>
+</body>
+</html>
