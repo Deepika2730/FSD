@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        * {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        #p_id {
+            height: 25px;
+            border-radius: 10px;
+            border: 2px solid black;
+            color: green;
+            width: 200px;
+            padding: 5px;
+        }
+        input[type="radio"]
+        {
+            color: green;
+        }
+        #deep {
+            height: 40px;
+            width: 100px;
+            color: white;
+            background-color:black;
+            border-radius: 15px;
+            border: 0;
+        }
+        #deep:hover {
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div style="height: 400px;width: 600px;border-radius: 20px;background-color: whitesmoke; padding-top: 50px;">
+            <h1>Let's Play a Game</h1>
+            <input type="radio" name="selnum" value="1">
+            <input type="radio" name="selnum" value="2">
+            <input type="radio" name="selnum" value="3">
+            <input type="radio" name="selnum" value="4">
+            <input type="radio" name="selnum" value="5">
+            <p>System Generated:</p>
+            <p id="p_id"></p>
+            <br><br>
+            <button onclick="deepu()" id="deep">Go!</button>
+            <p id="result"></p>
+        </div>
+    </center>
+    <script>
+        deepu=()=>
+        {   
+            let ginp=Math.floor(Math.random()*5)+1;
+            document.getElementById("p_id").innerText=ginp;
+            let grd=document.querySelector('input[name="selnum"]:checked').value;
+            if(grd==ginp)
+            {
+                document.getElementById('result').innerText="You won!";
+            }
+            else
+            {
+                document.getElementById('result').innerText="You lost!";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task2</title>
+</head>
+<body>
+    <center>
+    <img id="image1" src="../images/c2.jpg" onmouseover="get()" onmouseout="get1()" alt="Image 1" style="height: 400px;width: 400px;">
+    <img id="image2" src="../images/c1.jpg" style="display: none;height: 400px;width: 400px;" alt="Image 2"></center>
+    <script>
+        function get() {
+            document.getElementById("image1").style.display = "none";
+            document.getElementById("image2").style.display = "block";
+        }
+
+        function get1() {
+            document.getElementById("image1").style.display = "block";
+            document.getElementById("image2").style.display = "none";
+        }
+    </script>
+</body>
+</html>

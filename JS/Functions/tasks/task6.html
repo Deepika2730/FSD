@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with Input Types and Separate Validation</title>
+  <style type="text/css">
+    #age{
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Sample Form</h2>
+
+<form id="myForm" onsubmit="return validateForm()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="18" max="99"><br><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+  <label for="comments">Comments:</label>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+  <input type="checkbox" id="agree" name="agree">
+  <label for="agree">Agree to Terms and Conditions</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var gender = document.querySelector('input[name="gender"]:checked');
+  var email = document.getElementById("email").value;
+  var age = document.getElementById("age").value;
+  var comments = document.getElementById("comments").value;
+  var agree = document.getElementById("agree").checked;
+
+  if (name === "") {
+    alert("Please enter your name.");
+    return false;
+  }
+
+  if (!gender) {
+    alert("Please select a gender.");
+    return false;
+  }
+
+  if (email === "") {
+    alert("Please enter your email.");
+    return false;
+  }
+
+  if (isNaN(age) || age < 18 || age > 99) {
+    alert("Please enter a valid age between 18 and 99.");
+    return false;
+  }
+
+  if (comments === "") {
+    alert("Please enter your comments.");
+    return false;
+  }
+
+  if (!agree) {
+    alert("Please agree to the terms.");
+    return false;
+  }
+   var email = document.getElementById("email").value;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Validate Select Input
+            var selectedOption = document.getElementById("country").value;
+            if (selectedOption === "") {
+                alert("Please select a country.");
+                return false;
+            }
+            
+
+  return true;
+}
+</script>
+
+</body>
+</html>
