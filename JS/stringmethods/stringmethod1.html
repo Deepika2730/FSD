@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Method 1</title>
+</head>
+<body>
+       <h2>String Methods</h2>
+       <table border="1" cellspacing="0">
+       	<tr>
+       		<td>D</td>
+       		<td>R</td>
+       		<td>I</td>
+       		<td>V</td>
+       		<td>E</td>
+       		<td>&nbsp;</td>
+       		<td>R</td>
+       		<td>E</td>
+       		<td>A</td>
+       		<td>D</td>
+       		<td>Y</td>
+       	</tr>
+       	<tr>
+       		<td>0</td>
+       		<td>1</td>
+       		<td>2</td>
+       		<td>3</td>
+       		<td>4</td>
+       		<td>5</td>
+       		<td>6</td>
+       		<td>7</td>
+       		<td>8</td>
+       		<td>9</td>
+       		<td>10</td>
+       	</tr>
+       	<tr>
+       		<td>-11</td>
+       		<td>-10</td>
+       		<td>-9</td>
+       		<td>-8</td>
+       		<td>-7</td>
+       		<td>-6</td>
+       		<td>-5</td>
+       		<td>-4</td>
+       		<td>-3</td>
+       		<td>-2</td>
+       		<td>-1</td>
+       	</tr>
+       </table>
+       <script type="text/javascript">
+       	function getstr(str) {
+       		// body...
+       		document.write("<b>"+str+"</b><br>")
+       	}
+       	let s = 'drive ready';
+       	getstr(s)//original string
+       	getstr(s.length);//finds thhe string length
+       	getstr(s.charAt(1));// finds the charcter at an particular position
+       	getstr(s.indexOf('r'));//finds the index value of a particular character
+       	getstr(s.indexOf('ready'));//finds the index value of a particular word starting letter
+       	getstr(s.lastIndexOf('r'));//finds the position of the multiple character in the string
+       	let name1="LALLI";
+		getstr("To Lower Case="+name1.toLowerCase())
+		getstr("To Upper Case="+name1.toUpperCase())
+		let name2='Sree';
+		getstr("Concate of string="+name1.concat(name2))
+		let name3='DEEPU';
+		getstr("Concate of string="+name1.concat(name2,name3))
+		let name4='Tipu';
+		getstr("Concate of string="+name1.concat(name2,name3,name4))
+		let username = ' deepika';
+		getstr("trim method="+username.trim())
+		let name5='Raju&Ravi'
+		console.log(name5.split("&"))
+		let name6 = 'sree'
+		console.log(name6.startsWith('s'))
+		console.log(name6.endsWith('e'))
+		//slice methods
+		//ss('slice of string='+str.slice(startpos,endpos-1))
+		//it allows +ve and -ve index values
+		getstr('slice of string='+s.slice(1,4))
+		getstr('slice of string='+s.slice(-5))
+		getstr('slice of string='+s.slice(-4,-1))
+		//substring method
+		// it allow only +ve index values
+		//includes method
+		getstr('includes od string='+s.includes('ready'));
+		//charCodeAt method -- for finding the ascii code value
+		getstr('charCodeAt of a String='+s.charCodeAt('i'))
+		//repeat method --
+		getstr('repeat of a string ='+name4.repeat(3))
+		//replace method
+		getstr('replace of String='+s.replace('ready','course'))
+       </script>
+</body>
+</html>

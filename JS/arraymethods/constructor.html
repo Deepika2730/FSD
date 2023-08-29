@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Constructor</title>
+</head>
+<body>
+	<h2>Constructor</h2>
+	<script type="text/javascript">
+		class std{
+			constructor(r,f,l)
+			{
+				this.rn=r;
+				this.fn=f;
+				this.ln=l;
+				this.getfullname = function(){
+					return this.fn+" "+this.ln
+				}
+			}
+		}
+		let o = new std(2410,'sree','Deepu')
+		console.log(o.rn,o.fn,o.ln)
+		console.log(o.getfullname())
+		let fo = new std(2410,'sree','Deepu')
+		console.log(fo.rn,fo.fn,fo.ln)
+		class car{
+			constructor(s,b,a,h,bb,f,l,m)
+			{
+				this.str=s;
+				this.br=b;
+				this.ac=a;
+				this.hr=h;
+				this.brnd=bb;
+				this.fnn=f;
+				this.lnn=l;
+				this.mn=m;
+				this.getfullname = function()
+				{
+					return this.fnn+this.lnn+this.mn
+				}
+			}
+		}
+		let c = new car('black','toyato','speed','break',2020,'Bayerische','Motoren','werke')
+		console.log(c.str,c.br,c.ac,c.hr,c.brnd);
+        console.log(c.getfullname())
+	</script>
+</body>
+</html>

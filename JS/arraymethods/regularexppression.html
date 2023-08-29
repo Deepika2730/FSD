@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Regular Expression </title>
+</head>
+<body>
+       <h2>Regular Expression</h2>
+       <input type="text" name="" id="in_id">
+       <button onclick="check_charactersornot()">Check Validity</button>
+       <br>
+       <span id=""></span>
+       <script type="text/javascript">
+       	/*let r = /batch/;
+       	let o = r.test('fullstack batch');
+       	console.log(o)
+       	let r2 = /batch/;
+       let o1 = r2.test('full stack BATCH');
+       console.log(o1)
+       let r3 = /^b/
+       //ot =r3.test("tbatch")
+       ot =r3.test("batch")
+       console.log(ot);
+       /*let a ='batch';
+       r4 = new RegExp(`{a}`)
+       o3=r4.test('Full stack BATCH')*/
+       /*re =/batch/g;
+       res = re.exec("full stack batch course batch")
+       console.log(res)
+       console.log(res.index)
+       res = re.exec("full stack batch course batch")
+       console.log(res)
+       console.log(res.index)*/
+       	//numbber
+       	re = /^[0-9]{10}/
+       	o= re.test("8008737712");//correct => true
+        o= re.test("800873771234566");//wrong => true
+        //exceed the range without $
+       	console.log(o)
+       	/*if(o== true){
+       		alert('correct')
+       	}
+       	else{
+       		alert('wrong')
+       	}*/
+       	r = /^[0-9]{10}$/
+       	o1= r.test("800873771223");
+       	console.log(o1)
+       </script>
+</body>
+</html>
